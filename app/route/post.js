@@ -1,8 +1,8 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import asyncHandler from 'express-async-handler';
-import controller from '../controller/post';
-import jwtVerify from '../utilis/utils';
+const express = require('express');
+const bodyParser = require('body-parser');
+const asyncHandler = require('express-async-handler');
+const controller = require('../controller/post');
+const jwtVerify = require('../utilis/utils');
 
 const post = express.Router();
 
@@ -22,6 +22,5 @@ post.get('/post/:id/likes', asyncHandler((req, res) => controller.getAllLikes(re
 post.post('/post/:id/likes', asyncHandler((req, res, next) => jwtVerify(req, res, next)), asyncHandler((req, res) => controller.addLike(req, res)));
 
 post.delete('/post/:id/likes', asyncHandler((req, res, next) => jwtVerify(req, res, next)), asyncHandler((req, res) => controller.removeLike(req, res)));
-
 
 module.exports = post;
