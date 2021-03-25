@@ -1,6 +1,6 @@
 # Welcome to abihome_test Application!
 
-Welcome to **Mabihome_testn**! This application handles interactions between USERS and POST.
+Welcome to **Mabihome_test**! This application handles interactions between USERS and POST.
 
 # Technology Stack
 The application uses the following technology tools:
@@ -10,8 +10,6 @@ The application uses the following technology tools:
 * MongoDB: Primary database for storing all data
 
 * Express: Node.Js web application framework
-
-* Babel: Open-source JavaScript transcompiler
 
 
 # How it works

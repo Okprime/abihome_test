@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-underscore-dangle */
 const mongoose = require('mongoose');
 const postService = require('../service/post');
