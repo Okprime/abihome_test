@@ -1,3 +1,7 @@
+/* eslint-disable consistent-return */
+/* eslint-disable no-console */
+/* eslint-disable no-unused-vars */
+/* eslint-disable func-names */
 /* eslint-disable space-before-function-paren */
 /* eslint-disable prefer-arrow-callback */
 /* eslint-disable no-shadow */
@@ -72,7 +76,7 @@ module.exports = {
     }
     try {
       console.log('daaa', param);
-      return await userModel.findByIdAndUpdate(data, param, {new: true});
+      return await userModel.findByIdAndUpdate(data, param, { new: true });
     } catch (e) {
       console.log('an error occurred', e);
       if (e.name === 'MongoError' && e.code === 11000) {

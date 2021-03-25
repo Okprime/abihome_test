@@ -1,3 +1,5 @@
+/* eslint-disable consistent-return */
+/* eslint-disable no-console */
 const postModel = require('../model/post');
 const postReactionModel = require('../model/post_reactions');
 

@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+/* eslint-disable no-console */
 const userService = require('../service/user');
 const { signInSchema, signUpSchema } = require('../schema/user');
 const userModel = require('../model/user');
